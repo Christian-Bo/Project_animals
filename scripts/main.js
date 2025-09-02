@@ -1,5 +1,5 @@
 
-const numeroWhatsApp = "50240752770";
+const numeroWhatsApp = "50255393167";
         
 function pedirWhatsApp(codigo, nombreKit, precio) {
             
