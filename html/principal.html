@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>principal</title>
+</head>
+<body>
+    <!-- Decoraciones de fondo -->
+    <div class="decoration decoration-1"></div>
+    <div class="decoration decoration-2"></div>
+    <div class="decoration decoration-3"></div>
+
+    <div class="logo-header">
+        <img src="/img/logo.png" alt="Logo" />
+    </div>
+
+    <!-- Botón del menú hamburguesa -->
+    <button class="btn menu-toggle" type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Offcanvas menú lateral -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                <i class="fa-solid fa-paw me-2"></i>Menú Principal
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="menu-item">
+                <a href="principal.html">
+                <i class="fa-solid fa-house"></i>Inicio
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="conocenos.html">
+                    <i class="fa-solid fa-heart"></i>¿Quienes somos?
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="compras.html">
+                <i class="fa-solid fa-calendar"></i>Kits
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="compras_individual.html">
+                <i class="fa-solid fa-user-doctor"></i>Articulos individuales
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <i class="fa-solid fa-triangle-exclamation me-3"></i>
+                    ¡Prepárate para lo inesperado!
+                </h1>
+                <p class="hero-subtitle">
+                    En Guatemala enfrentamos terremotos, erupciones volcánicas y desastres naturales. 
+                    <strong>Tus mascotas también necesitan estar preparadas.</strong>
+                </p>
+
+                <!-- Estadísticas de Guatemala -->
+                <div class="guatemala-stats">
+                    <h4><i class="fa-solid fa-chart-line me-2"></i>Realidad en Guatemala</h4>
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Sismos anuales</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Volcanes activos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">72h</span>
+                            <span class="stat-label">Tiempo crítico</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid principal con contenido e imagen -->
+                <div class="content-grid">
+                    <!-- Texto explicativo -->
+                    <div class="content-text">
+                        <div class="emergency-fact">
+                            <h4><i class="fa-solid fa-heart-crack me-2"></i>¿Sabías que...?</h4>
+                            <p>El 60% de las mascotas se pierden durante emergencias porque sus dueños no tenían un plan de evacuación preparado.</p>
+                        </div>
+
+                        <div class="emergency-fact">
+                            <h4><i class="fa-solid fa-clock me-2"></i>Tiempo es vida</h4>
+                            <p>En una emergencia real, solo tienes 5-10 minutos para evacuar. ¿Tu mascota estaría lista?</p>
+                        </div>
+
+                        <div class="emergency-fact">
+                            <h4><i class="fa-solid fa-shield-heart me-2"></i>Protección completa</h4>
+                            <p>Un kit bien preparado puede mantener a tu mascota segura y alimentada hasta por 72 horas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Imagen del kit -->
+                    <div class="kit-showcase">
+                        <img src="/img/importante.jpg" 
+                             alt="Kit de Emergencia para Mascotas" 
+                             class="kit-image" />
+                    </div>
+                </div>
+
+                <!-- Botones de acción principales -->
+                <div class="action-buttons">
+                    <a href="compras.html">
+                        <button class="btn btn-emergency">
+                            <i class="fa-solid fa-shopping-cart me-2"></i>
+                            ¡Pide ahora tu Kit!
+                        </button>
+                    </a>
+                    
+                </div>
+
+                <!-- Call to action final -->
+                <div class="emergency-fact" style="margin-top: 2rem; text-align: center;">
+                    <h4><i class="fa-solid fa-heart me-2"></i>No esperes a que sea demasiado tarde</h4>
+                    <p><strong>Protege a tu familia completa, incluyendo a tus mascotas. Porque ellos también cuentan.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

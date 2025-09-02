@@ -1,0 +1,357 @@
+:root {
+    --cream-light: #fef9f3;
+    --cream-medium: #f5e6d3;
+    --golden-pastel: #f2d5a6;
+    --warm-beige: #e8d5c4;
+    --soft-brown: #d4b896;
+    --nose-pink: #f4c2c2;
+    --tongue-coral: #ffb3ba;
+    --dark-brown: #8b7355;
+    --shadow-brown: rgba(139, 115, 85, 0.15);
+    --blue-pastel: #a8d8ea;
+    --emergency-red: #ff6b6b;
+}
+
+body {
+    background: linear-gradient(135deg, var(--cream-light) 0%, var(--blue-pastel) 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark-brown);
+    overflow-x: hidden;
+}
+
+/* Logo en esquina superior derecha - MANTIENE animación importante */
+.logo-header {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1040;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid var(--golden-pastel);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 15px var(--shadow-brown);
+    transition: transform 0.3s ease;
+}
+
+.logo-header:hover {
+    transform: translateY(-2px);
+}
+
+.logo-header img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Botón del menú hamburguesa - MANTIENE hover dinámico */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1050;
+    background: var(--warm-beige);
+    border: 2px solid var(--soft-brown);
+    border-radius: 15px;
+    padding: 12px 15px;
+    box-shadow: 0 4px 15px var(--shadow-brown);
+    transition: background 0.2s ease;
+}
+
+.menu-toggle:hover {
+    background: var(--golden-pastel);
+}
+
+.menu-toggle i {
+    color: var(--dark-brown);
+    font-size: 1.5rem;
+}
+
+/* Sección principal */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.9);
+    border: 3px solid var(--golden-pastel);
+    border-radius: 30px;
+    padding: 3rem;
+    box-shadow: 0 10px 25px var(--shadow-brown);
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    color: var(--emergency-red);
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    color: var(--dark-brown);
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+/* Grid de contenido */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.content-text {
+    text-align: left;
+}
+
+.emergency-fact {
+    background: linear-gradient(135deg, var(--nose-pink), var(--tongue-coral));
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin: 1rem 0;
+    border-left: 5px solid var(--emergency-red);
+    box-shadow: 0 3px 10px rgba(255, 107, 107, 0.2);
+}
+
+.emergency-fact h4 {
+    color: var(--dark-brown);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.emergency-fact p {
+    color: var(--dark-brown);
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Imagen del kit - Simplificada */
+.kit-showcase {
+    position: relative;
+    text-align: center;
+}
+
+.kit-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px var(--shadow-brown);
+}
+
+.image-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--emergency-red);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(255, 107, 107, 0.4);
+}
+
+/* Botones de acción - MANTIENE hover dinámico */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn-emergency {
+    background: linear-gradient(135deg, var(--emergency-red), #ff8a8a);
+    border: none;
+    color: white;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease;
+    box-shadow: 0 3px 10px rgba(255, 107, 107, 0.3);
+}
+
+.btn-emergency:hover {
+    transform: translateY(-2px);
+    color: white;
+}
+
+.btn-info-kit {
+    background: var(--golden-pastel);
+    border: 2px solid var(--soft-brown);
+    color: var(--dark-brown);
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: background 0.2s ease;
+}
+
+.btn-info-kit:hover {
+    background: var(--warm-beige);
+    color: var(--dark-brown);
+}
+
+/* Estadísticas de Guatemala */
+.guatemala-stats {
+    background: rgba(168, 216, 234, 0.3);
+    border: 2px solid var(--blue-pastel);
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.guatemala-stats h4 {
+    color: var(--emergency-red);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--emergency-red);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--dark-brown);
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .stats-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* Offcanvas personalizado */
+.offcanvas {
+    background: linear-gradient(180deg, var(--cream-light) 0%, var(--warm-beige) 100%);
+    border-right: 3px solid var(--golden-pastel);
+}
+
+.offcanvas-header {
+    background: var(--golden-pastel);
+    border-bottom: 2px solid var(--soft-brown);
+    padding: 1.5rem;
+}
+
+.offcanvas-title {
+    color: var(--dark-brown);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.btn-close {
+    background: var(--cream-light);
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.offcanvas-body {
+    padding: 2rem 1.5rem;
+    color: var(--dark-brown);
+}
+
+.menu-item {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--golden-pastel);
+    transition: background 0.2s ease, padding-left 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu-item a {
+    color: var(--dark-brown);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.menu-item:hover {
+    background: var(--cream-medium);
+    padding-left: 1rem;
+}
+
+.menu-item i {
+    color: var(--soft-brown);
+    margin-right: 0.8rem;
+    width: 20px;
+}
+
+/* Decoraciones estáticas para mejor rendimiento */
+.decoration {
+    position: fixed;
+    border-radius: 50%;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.decoration-1 {
+    width: 200px;
+    height: 200px;
+    background: var(--tongue-coral);
+    top: 10%;
+    right: 10%;
+}
+
+.decoration-2 {
+    width: 150px;
+    height: 150px;
+    background: var(--golden-pastel);
+    bottom: 20%;
+    left: 10%;
+}
+
+.decoration-3 {
+    width: 100px;
+    height: 100px;
+    background: var(--nose-pink);
+    top: 60%;
+    right: 20%;
+}
